@@ -1,0 +1,90 @@
+#logo {
+  &.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+  &.clicked {
+    pointer-events: none;
+  }
+}
+
+.yureru-s {
+  animation: yureru-s 2.5s infinite;
+}
+@keyframes yureru-s {
+  0% {
+    transform: translate(-51%, -50%);
+  }
+  5% {
+    transform: translate(-49%, -50%);
+  }
+  10% {
+    transform: translate(-51%, -50%);
+  }
+  15% {
+    transform: translate(-49%, -50%);
+  }
+  20% {
+    transform: translate(-50%, -50%);
+  }
+  25% {
+    transform: translate(-50%, -50%);
+  }
+  30% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+.logo {
+  position: absolute;
+  width: 60vw;
+  top: 50vh;
+  left: 50vw;
+  transform: translateY(-50%) translateX(-50%);
+  svg {
+    margin: 0 auto;
+    #middle {
+      opacity: 0;
+      &.clicked {
+        opacity: 1;
+        transition: 1s;
+      }
+    }
+    #top {
+      opacity: 1;
+      transform: translateY(90px);
+      &.clicked {
+        transform: translateY(0);
+        transition: 1s;
+      }
+    }
+    #bottom {
+      opacity: 1;
+      transform: translateY(-90px);
+      &.clicked {
+        transform: translateY(0);
+        transition: 1s;
+      }
+    }
+  }
+}
+
+#header,
+#main,
+#footer {
+  opacity: 0;
+  visibility: hidden;
+  &.clicked {
+    opacity: 1;
+    visibility: visible;
+    transition: 1s;
+  }
+}
+
+#main {
+  transform: translate(0, 100%);
+  &.clicked {
+    transform: translate(0, 0);
+  }
+}

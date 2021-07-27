@@ -1,0 +1,185 @@
+body {
+  overflow: hidden;
+}
+
+body header {
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  margin-left: 10px;
+  bottom: 0;
+}
+
+body header ul {
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+body header ul a {
+  text-decoration: none;
+}
+
+body header ul .hirocom {
+  width: 30px;
+  margin-bottom: 5px;
+}
+
+body header ul .instaLink path {
+  fill: white;
+}
+
+body header ul .instaLink:hover path {
+  fill: #ff446d;
+}
+
+body header ul .instaLink .instagram {
+  width: 30px;
+}
+
+body header ul .twitterLink path {
+  fill: white;
+}
+
+body header ul .twitterLink:hover path {
+  fill: #1b7dec;
+}
+
+body header ul .twitterLink .twetter {
+  width: 30px;
+  margin-top: 5px;
+}
+
+body main {
+  background-image: url("../img/img1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body main .bgFilter {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+}
+
+body main .bgFilter .midashiBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vw;
+  -webkit-transition-delay: 0.7s;
+          transition-delay: 0.7s;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body main .bgFilter .midashiBox .nittei {
+  color: #fff;
+  font-size: 4vw;
+  font-family: "Dela Gothic One", cursive;
+}
+
+@media (min-width: 1025px) {
+  body main .bgFilter .midashiBox .nittei {
+    font-size: 2vw;
+  }
+}
+
+body main .bgFilter .midashiBox .siteButton {
+  background: #fff;
+  border-radius: 15px;
+  height: 40px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .bgFilter .midashiBox .siteButton a {
+  color: #000;
+  text-decoration: none;
+  display: block;
+  margin: 0 10px;
+}
+
+@media (min-width: 1025px) {
+  body main .bgFilter .midashiBox .siteButton a {
+    font-size: 1.5vw;
+  }
+}
+
+body main .bgFilter .midashiBox h1 {
+  font-family: "Dela Gothic One", cursive;
+  font-size: 9vw;
+  text-align: center;
+  color: #fff;
+  font-weight: normal;
+}
+
+@media (min-width: 1025px) {
+  body main .bgFilter .midashiBox h1 {
+    font-size: 7vw;
+  }
+}
+
+#cursor {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  #cursor {
+    display: inline;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    pointer-events: none;
+    position: fixed;
+    top: -4px;
+    left: -4px;
+    width: 8px;
+    height: 8px;
+    background: #f39939;
+    opacity: 0.7;
+    border-radius: 50%;
+    z-index: 999;
+    -webkit-transition: width 0.3s, height 0.3s, top 0.3s, left 0.3s;
+    transition: width 0.3s, height 0.3s, top 0.3s, left 0.3s;
+  }
+  #cursor.hov_ {
+    top: -12px;
+    left: -12px;
+    width: 32px;
+    height: 32px;
+    background: #f39939;
+    opacity: 0.8;
+  }
+}
+
+html,
+body,
+a {
+  cursor: auto;
+}
+
+@media (min-width: 1025px) {
+  html,
+  body,
+  a {
+    cursor: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
